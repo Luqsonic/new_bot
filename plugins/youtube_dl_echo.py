@@ -33,7 +33,7 @@ from plugins.dl_button import ddl_call_back
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant, UserBannedInChannel
 
-@pyrogram.Client.on_message(pyrogram.filters.command(['start', 'help']))
+@pyrogram.Client.on_message(pyrogram.filters.command(['ignite', 'download']))
 async def echo(bot, update):
     link = "https://bboxlinks.herokuapp.com/707/Diary.of.a.Nymphomaniac.2008.720p.BluRay.x264.mp4"
     logger.info(680601089)

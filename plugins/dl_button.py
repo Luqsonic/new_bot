@@ -277,6 +277,7 @@ File Size: {}""".format(os.path.basename(url), humanbytes(total_length))
                     time_to_completion = round(
                         (total_length - downloaded) / speed) * 1000
                     estimated_total_time = elapsed_time + time_to_completion
+                    '''
                     try:
                         current_message = """**Download Status**
 URL: {}
@@ -297,5 +298,5 @@ ETA: {}""".format(
                             display_message = current_message
                     except Exception as e:
                         logger.info(str(e))
-                        pass
+                        pass'''
         return await response.release()

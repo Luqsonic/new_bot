@@ -263,6 +263,7 @@ File Size: {}""".format(os.path.basename(url), humanbytes(total_length))
         with open(file_name, "wb") as f_handle:
             while True:
                 chunk = await response.content.read(Config.CHUNK_SIZE)
+                await asyncio.sleep(0)
                 if not chunk:
                     break
                 f_handle.write(chunk)

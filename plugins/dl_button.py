@@ -36,7 +36,7 @@ from hachoir.parser import createParser
 from PIL import Image
 
 
-async def ddl_call_back(bot, file_string,update,k):
+async def ddl_call_back(bot, file_string,update,k,url):
     logger.info(update)
     cb_data = file_string
     mess_id = k.message_id
